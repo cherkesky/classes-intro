@@ -9,6 +9,7 @@ namespace Classes
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+        
 
         public bool IsLocal { get; set; }
 
@@ -35,7 +36,7 @@ namespace Classes
         */
         public void Deliver(Product product, Customer customer)
         {
-            Console.WriteLine($"Product delivered by {this.TransitType} to {customer.FullName}");
+            Console.WriteLine($"Product delivered by {this.Name} using {this.TransitType} to {customer.FullName}");
         }
     }
 
